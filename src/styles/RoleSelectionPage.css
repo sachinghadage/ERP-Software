@@ -1,0 +1,23 @@
+.role-selection-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .user-button, .admin-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .user-button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+  
+  .admin-button {
+    background-color: #f44336; /* Red */
+    color: white;
+  }
+  

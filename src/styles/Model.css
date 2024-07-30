@@ -1,0 +1,45 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 10px; /* Ensure some padding around the modal on small screens */
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .modal-content {
+    padding: 15px;
+    max-width: 90%; /* Make sure the modal doesn't take up the entire screen width */
+  }
+
+  .close-button {
+    font-size: 18px; /* Adjust close button size for smaller screens */
+  }
+}
